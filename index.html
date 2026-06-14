@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebOS 1 - Desktop Environment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="login-screen">
+            <div id="login-box">
+                <p id="login-prompt">webOS login:</p>
+                <input id="login-input" type="text" autocomplete="off" spellcheck="false" placeholder="username">
+                <button id="login-btn">Enter</button>
+            </div>
+        </div>
+        
+        <div id = "desktop">
+            <div class="shortcut" onclick="openWindow('app1')">
+                <div class="icon"><img src="icons/folder_icon_v4.svg"></div>
+                <span class="icon-label">My documents</span>
+            </div>
+                <div class="shortcut" onclick="openWindow('terminal')">
+                <div class="icon"><img src="icons/terminal.png"></div>
+                <span class="icon-label">Terminal</span>
+           </div>
+        </div>
+
+        <div id="taskbar">
+            <button id="start-btn">Start</button>
+            <div id="active-apps"></div>
+            <div id="system-clock">00:00</div>
+        </div>
+
+        <script src="login.js"></script>
+        <script src="app.js"></script>
+        <script src="terminal.js"></script>
+        <script src="explorer.js"></script>
+    </body>
+</html>
