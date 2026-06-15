@@ -1,7 +1,6 @@
-# CaffeineOS
+# CaffeineOS Lite
 
-A web-based desktop environment built with HTML, CSS, and JavaScript — my first JS project, made for the Hack Club Stardance Challenge.
-
+A web-based desktop environment built with HTML, CSS, and JavaScript — my first JS project, made for the Hack Club Stardance Challenge. This is the foundation; the full **CaffeineOS** (with themes, Hyprland-style customization, and more) comes in WebOS2.
 🔗 **Live demo:** [webos1-otzpt.netlify.app](https://webos1-otzpt.netlify.app/)
 
 ## Features
