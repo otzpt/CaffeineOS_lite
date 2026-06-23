@@ -9,6 +9,8 @@ function dologin() {
     if (val == '') return;
     username = val;
     loginScreen.style.display = 'none'; 
+
+    openWindow('welcome');
 }
 
 loginBtn.addEventListener('click', dologin);

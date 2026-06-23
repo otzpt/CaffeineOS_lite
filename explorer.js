@@ -16,7 +16,11 @@ const fileSystem = {
     ],
 
     Projects: [
-        {name: 'WebOS1', type: 'link', url: 'https://github.com/otzpt/WebOS1'}
+        {name: 'CaffeineOS_Lite', type: 'link', url: 'https://github.com/otzpt/WebOS1'},
+        {name: 'VOIDBOT', type: 'link', url: 'https://github.com/otzpt/VOIDBOT'},
+        {name: 'Voidtune', type: 'link', url: 'https://github.com/otzpt/VOIDTUNE'},
+        {name: 'V-Agent', type: 'link', url: 'https://github.com/otzpt/V-Agent'},
+        {name: 'Navigation-system', type: 'link', url: 'https://github.com/otzpt/Navigation-system'}
     ]
 };
 

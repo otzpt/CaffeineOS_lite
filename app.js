@@ -48,6 +48,12 @@ function openWindow(appId) {
             </div>
         `;
 
+    } else if (appId === 'welcome') {
+        content = getWelcomeContent();
+
+        windowDiv.style.top = (window.innerHeight / 2 - 150) + 'px';
+        windowDiv.style.left = (window.innerWidth / 2 - 200) + 'px';
+
     } else {
         content =`
         <div class="window-header">
@@ -103,7 +109,9 @@ function openWindow(appId) {
 
 function closeWindow(appId) {
     const windowElement = document.getElementById(`window-${appId}`);
+
     if (windowElement) {
         windowElement.remove();
     }
 }
+

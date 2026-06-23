@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebOS 1 - Desktop Environment</title>
+        <title>CaffeineOS Lite</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
         <div id="login-screen">
             <div id="login-box">
-                <p id="login-prompt">webOS login:</p>
+                <p id="login-prompt">CaffeineOS login:</p>
                 <input id="login-input" type="text" autocomplete="off" spellcheck="false" placeholder="username">
                 <button id="login-btn">Enter</button>
             </div>
@@ -28,14 +27,44 @@
         </div>
 
         <div id="taskbar">
-            <button id="start-btn">Start</button>
+            <button id="start-btn" onclick="ToggleStartMenu()">Start</button>
             <div id="active-apps"></div>
             <div id="system-clock">00:00</div>
         </div>
 
+        <div id="start-menu" class="start-menu-box">
+            <div class="menu-content">
+                <div class="apps-list">
+                    <div class="menu-item" onclick="openWindow('app1')">
+                        <img src="icons/folder_icon_v4.svg" class="menu-item-icon">
+                        <span>My documents</span>
+                    </div>
+                    
+                    <div class="menu-item" onclick="openWindow('terminal')">
+                        <img src="icons/terminal.png" class="menu-item-icon">
+                        <span>Terminal</span>
+                    </div>
+                </div>
+
+                <div class="system-panel">
+                    <span class="panel-header">User</span>
+                    <div class="panel-item" onclick="openWindow('app1')">Documents</div>
+                    <div class="panel-item">Control Panel</div>
+                </div>
+            </div>
+
+            <div class="menu-footer">
+                <button id="shutdown-btn">Shut Down</button>
+            </div>
+        </div>
+
+
+
         <script src="login.js"></script>
+        <script src="welcome.js"></script>
         <script src="app.js"></script>
         <script src="terminal.js"></script>
         <script src="explorer.js"></script>
+        <script src="taskbar.js"></script>
     </body>
 </html>
